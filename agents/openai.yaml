@@ -1,0 +1,8 @@
+interface:
+  display_name: "视频封面参考风格"
+  short_description: "根据人物照片和准确标题生成三种参考风格的立体真人视频封面"
+  brand_color: "#F2C94C"
+  default_prompt: "使用 $video-cover-reference，根据我提供的照片和标题生成同风格短视频封面。"
+
+policy:
+  allow_implicit_invocation: true
