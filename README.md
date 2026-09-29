@@ -10,6 +10,21 @@
 
 这是可安装的工作流和提示词，不是独立生图网站，也不附带 API 额度。日常使用可以简化成“照片＋标题”，首次需要安装并准备可用的图片生成能力。
 
+## 示例：我的照片 → 我的封面
+
+<table>
+  <tr>
+    <td><img src="assets/examples/user-photo-reference.jpg" width="240" alt="作者本人照片的公开示例，带水印" /></td>
+    <td><img src="assets/examples/user-cover-9x16.jpg" width="240" alt="根据作者照片生成的 9:16 封面示例，带水印" /></td>
+  </tr>
+  <tr>
+    <td>输入照片（缩小处理版）</td>
+    <td>输出封面（缩小处理版）</td>
+  </tr>
+</table>
+
+示例图用于说明工作流效果，不是可自由再利用的素材。原始高清照片不在仓库中；肖像和图片边界见 [ASSET-NOTICE.md](ASSET-NOTICE.md)。
+
 ## 在 Codex 中使用
 
 将仓库链接交给 Codex 的 `$skill-installer`，或在 macOS / Linux 终端运行：
