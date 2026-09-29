@@ -10,20 +10,24 @@
 
 这是可安装的工作流和提示词，不是独立生图网站，也不附带 API 额度。日常使用可以简化成“照片＋标题”，首次需要安装并准备可用的图片生成能力。
 
-## 示例：我的照片 → 我的封面
+## 示例：三套视觉风格
+
+下面直接展示本 Skill 支持的三套风格示例，不做“输入照片 → 输出封面”的前后对比。三张图均为缩小、去元数据并加水印后的公开示例：
 
 <table>
   <tr>
-    <td><img src="assets/examples/user-photo-reference.jpg" width="240" alt="作者本人照片的公开示例，带水印" /></td>
-    <td><img src="assets/examples/user-cover-9x16.jpg" width="240" alt="根据作者照片生成的 9:16 封面示例，带水印" /></td>
+    <td><img src="assets/examples/style-yellow-orange.jpg" width="220" alt="黄橙撕纸拼贴风格示例，带水印" /></td>
+    <td><img src="assets/examples/style-blue-mint.jpg" width="220" alt="宝蓝薄荷撕纸拼贴风格示例，带水印" /></td>
+    <td><img src="assets/examples/style-yellow-black-office.jpg" width="220" alt="黄黑写实办公演示风格示例，带水印" /></td>
   </tr>
   <tr>
-    <td>输入照片（缩小处理版）</td>
-    <td>输出封面（缩小处理版）</td>
+    <td><strong>黄橙撕纸拼贴</strong><br />适合教程、入门、知识分享</td>
+    <td><strong>宝蓝薄荷撕纸拼贴</strong><br />适合 AI 工具、效率、工作流</td>
+    <td><strong>黄黑写实办公演示</strong><br />适合产品、界面和办公场景</td>
   </tr>
 </table>
 
-示例图用于说明工作流效果，不是可自由再利用的素材。原始高清照片不在仓库中；肖像和图片边界见 [ASSET-NOTICE.md](ASSET-NOTICE.md)。
+示例图用于说明工作流效果，不是可自由再利用的素材。图片、肖像和使用边界见 [ASSET-NOTICE.md](ASSET-NOTICE.md)。
 
 ## 在 Codex 中使用
 
@@ -107,7 +111,7 @@ python3 -m py_compile scripts/generate_with_references.py
 
 ## 公开示例与肖像保护
 
-可以分享 Skill 文本和脚本。公开示例使用的是作者本人提供的照片和成品的缩小版本，已移除 EXIF 等元数据，并加上“仅作公开示例”的水印；原始高清照片不进入仓库。
+可以分享 Skill 文本和脚本。公开示例使用的是作者提供的三套风格参考封面及其处理后的视觉样例，已移除 EXIF 等元数据，并加上“仅作公开示例”的水印；原始高清素材不进入仓库。
 
 代码和文档按 MIT 发布；图片、肖像和其他素材不在 MIT 范围内。图片仅用于查看本 Skill 的示例效果，禁止下载后再发布、出售、制作素材包、训练数据集、做人脸识别、换脸、冒充作者或用于与作者无关的商业宣传。完整声明见 [ASSET-NOTICE.md](ASSET-NOTICE.md)。
 
