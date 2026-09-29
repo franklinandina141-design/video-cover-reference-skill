@@ -24,7 +24,7 @@ git clone https://github.com/franklinandina141-design/video-cover-reference-skil
 
 安装后开启新任务；如果没有识别到 Skill，重启 Codex。安装路径依据 [Codex 官方 Skills 文档](https://developers.openai.com/codex/skills/)。其他 Agent 可参考这套文件结构，但本仓库未逐一测试。
 
-仓库当前为私有时，只有拥有访问权限的 GitHub 用户能克隆；ZIP 可直接分发。面向所有观众分享仓库链接前，应确认仓库已公开。
+仓库公开后，任何人都可以查看和克隆代码与示例；仓库不包含原始照片、API 密钥或作者的生图额度。示例素材的肖像和图片使用边界见 [ASSET-NOTICE.md](ASSET-NOTICE.md) 和 [assets/README.md](assets/README.md)。
 
 调用时提供：
 
@@ -85,13 +85,18 @@ python3 -m py_compile scripts/generate_with_references.py
 - `SKILL.md`：Skill 入口和工作流
 - `references/`：视觉系统、提示词模板、验收清单
 - `assets/`：用户提供的风格参考图
+- `assets/examples/`：经过缩小、去元数据并加示例水印的公开演示素材
 - `scripts/generate_with_references.py`：带图片输入的生成脚本
 - `.env.example`：环境变量名称示例，不含真实凭据
 - `tests/`：使用本地模拟服务的脚本验证
 
-## 参考图与分享
+## 公开示例与肖像保护
 
-可以分享 Skill 文本和脚本。`assets/` 中的真人参考封面用于视觉示例，有相应分享权利的照片可以保留；是否公开不由“出现真人”这一点单独决定。图片不自动适用 MIT 许可，另作传播或商业使用时应取得相应授权。输出应使用使用者提供的人物照片，不复用参考图人物冒充使用者。
+可以分享 Skill 文本和脚本。公开示例使用的是作者本人提供的照片和成品的缩小版本，已移除 EXIF 等元数据，并加上“仅作公开示例”的水印；原始高清照片不进入仓库。
+
+代码和文档按 MIT 发布；图片、肖像和其他素材不在 MIT 范围内。图片仅用于查看本 Skill 的示例效果，禁止下载后再发布、出售、制作素材包、训练数据集、做人脸识别、换脸、冒充作者或用于与作者无关的商业宣传。完整声明见 [ASSET-NOTICE.md](ASSET-NOTICE.md)。
+
+这些措施能明确授权范围、减少原图暴露和降低误用风险，但不能阻止 GitHub 用户截图、复制或镜像；如果未来不想继续公开，应删除示例文件并重新检查 Git 历史与镜像。
 
 ## 许可
 
